@@ -1,0 +1,86 @@
+---
+title: "Путь Культивации: Создание кожи"
+description: "После 100 лет скорняжного дела я стал гигантом в демонической секте."
+author: "It is peach blossom pastry"
+year: 2024
+status: "завершён"
+chapters_count: 351
+genres: ["боевик", "боевые искусства", "приключения", "сверхъестественное", "сюаньхуань", "сянься", "уся", "фантастика", "фэнтези"]
+tags: ["алхимия", "главный герой мужчина", "демонический культ", "демоны", "жизнь и смерть", "культивация", "марионетки", "подчинение", "призрак", "секты", "система", "философия"]
+boosty_url: "https://boosty.to/langllax"
+---
+
+import { Card, CardGrid, Badge, LinkButton } from '@astrojs/starlight/components';
+
+<div class="book-info">
+  <div class="meta-section">
+    <strong>Оригинальные и альтернативные названия:</strong> Cultivation through Skin Making / After 100 years of leatherworking, I have become a giant in the magic sect / 制皮百年，我成了魔门巨头 <br/>
+    <strong>Команда перевода:</strong> OneSecond <br/>
+    <strong>График выхода:</strong> Каждые 0.46 дня (бесплатные: 1 глава каждые 13 дней) <br/>
+    <strong>Атмосфера:</strong> Dark (ярко выраженные жестокость и агрессия, персонажи страдают и мучаются)
+  </div>
+
+  <div class="genres-section">
+    <h4>Жанры:</h4>
+    {frontmatter.genres.map(genre => <Badge text={genre} variant="success" size="large" />)}
+  </div>
+
+  <div class="tags-section">
+    <h4>Тэги:</h4>
+    {frontmatter.tags.map(tag => <Badge text={tag} variant="note" size="medium" />)}
+  </div>
+</div>
+
+<hr/>
+
+## Описание ранобэ
+
+Путь Культивации через Создание кожи — жестокая и захватывающая история о выживании в демонической секте марионеток. Сун Янь оказывается похищен и превращен в слугу, чья задача — выделывать шкуры для магических артефактов. Малейший промах стоит жизни. Но благодаря невероятной удаче и своей смекалке, он открывает уникальный "Призрачный Духовный Корень".
+
+## 🔗 Где читать?
+
+<CardGrid>
+  <Card title="Бесплатные главы" icon="open-book">
+    Читайте опубликованные бесплатные главы на популярных платформах (переход по ссылкам скоро будет доступен):
+    
+    <LinkButton href="#" variant="secondary" icon="external">RanobeLib</LinkButton>
+    <br/>
+    <br/>
+    <LinkButton href="#" variant="secondary" icon="external">Rulate</LinkButton>
+  </Card>
+
+  <Card title="Платные главы на Boosty" icon="patreon">
+    Хотите читать новые главы первыми? Поддержите команду:
+
+    <LinkButton href="https://boosty.to/langllax" variant="primary" icon="right-arrow">Перейти на Boosty команды</LinkButton>
+    <br/><br/>
+    * Пак Главы 1-10: [Читать](/boosty)
+    * Пак Главы 11-20: [Читать](/boosty)
+    * VIP подписка (Доступ ко всему): [Оформить](/boosty)
+  </Card>
+</CardGrid>
+
+<style>
+  .book-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .meta-section {
+    padding: 1rem;
+    background-color: var(--sl-color-bg-inline-code);
+    border-radius: 0.5rem;
+    border: 1px solid var(--sl-color-gray-5);
+  }
+  .genres-section, .tags-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .genres-section h4, .tags-section h4 {
+    margin: 0;
+    margin-right: 0.5rem;
+  }
+</style>
