@@ -1,0 +1,42 @@
+---
+interface Props {
+  link: string;
+}
+const { link } = Astro.props;
+---
+<div class="boosty-banner">
+  <h3>Продолжение уже на Boosty!</h3>
+  <p>Поддержите переводчиков и читайте новые главы первыми.</p>
+  <a href={link} target="_blank" rel="noopener noreferrer" class="boosty-button">
+    Читать проду
+  </a>
+</div>
+
+<style>
+  .boosty-banner {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: var(--sl-color-bg-inline-code);
+    border: 1px solid var(--sl-color-hairline-light);
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  .boosty-banner h3 {
+    margin-top: 0;
+    color: var(--sl-color-white);
+  }
+  .boosty-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f15f2c; /* Boosty primary color */
+    color: white !important;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  .boosty-button:hover {
+    background-color: #e04e1b;
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+title: Zabaichen Bank Selector
+description: Переводы книг, новелл и комиксов.
+template: splash
+hero:
+  tagline: Добро пожаловать на сайт команды переводов Zabaichen Bank Selector! Здесь вы найдете наши лучшие работы в удобном формате.
+  image:
+    file: ../../../assets/houston.webp
+  actions:
+    - text: Читать книги
+      link: /books/example-novel/
+      icon: right-arrow
+      variant: primary
+    - text: Поддержать на Boosty
+      link: https://boosty.to/
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Возможности сайта
+
+<CardGrid stagger>
+	<Card title="Удобное оглавление" icon="document">
+		Встроенная навигация по главам (Table of Contents) в правой колонке позволяет быстро перемещаться по тексту длинной книги.
+	</Card>
+	<Card title="Поддержка авторов" icon="patreon">
+		В конце каждой бесплатной книги вы найдете удобную кнопку для перехода на Boosty за продолжением.
+	</Card>
+	<Card title="Темная тема" icon="moon">
+		Комфортное чтение в любое время суток благодаря встроенной поддержке темной темы, которая включается автоматически.
+	</Card>
+	<Card title="Быстрый поиск" icon="magnifier">
+		Мгновенно находите нужные главы или произведения с помощью встроенного полнотекстового поиска.
+	</Card>
+</CardGrid>
