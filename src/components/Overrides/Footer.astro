@@ -3,7 +3,7 @@ import type { Props } from '@astrojs/starlight/props';
 import Default from '@astrojs/starlight/components/Footer.astro';
 import BoostyBanner from '../BoostyBanner.astro';
 
-const boostyUrl = Astro.props.entry.data.boosty_url;
+const boostyUrl = Astro.props.entry?.data?.boosty_url;
 ---
 {boostyUrl && <BoostyBanner link={boostyUrl} />}
 <Default {...Astro.props} />
