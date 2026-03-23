@@ -4,8 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://ваш-username.github.io',
-	base: '/ваше-название-репозитория',
+	// site: 'https://ваш-username.github.io',
+	// base: '/zbs-bosty',
 	integrations: [
 		starlight({
 			title: 'Zabaichen Bank Selector',
